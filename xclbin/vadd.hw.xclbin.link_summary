@@ -1,0 +1,832 @@
+<ENTRY>
+{
+ "thisFile": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/xclbin/vadd.hw.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Aug 27 18:20:53 2020",
+ "timestampMillis": "1598520053928",
+ "buildStep": {
+  "cmdId": "cfac1746-4227-4c2c-8fe4-6c7b3f11830a",
+  "name": "v++",
+  "logFile": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u250_xdma_201830_2 --save-temps -lo ./xclbin/vadd.hw.xclbin ./xclbin/vadd.hw.xo ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_xdma_201830_2",
+   "--save-temps",
+   "-lo",
+   "./xclbin/vadd.hw.xclbin",
+   "./xclbin/vadd.hw.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:20:53 2020",
+ "timestampMillis": "1598520053928",
+ "status": {
+  "cmdId": "cfac1746-4227-4c2c-8fe4-6c7b3f11830a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Aug 27 18:21:10 2020",
+ "timestampMillis": "1598520070975",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u250_xdma_201830_2.dsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "vadd.hw",
+    "file": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/xclbin/vadd.hw.xclbin",
+    "reports": []
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "Vadd_A_B",
+     "file": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/xclbin/vadd.hw.xo",
+     "reports": []
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "Vadd_A_B_1"
+    ],
+    "type": "RTL"
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:11 2020",
+ "timestampMillis": "1598520071091",
+ "buildStep": {
+  "cmdId": "d62d0c9e-d6a7-46bb-9fd7-e799f1dc304b",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/xclbin/vadd.hw.xo -keep --xpfm /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --target hw --output_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int --temp_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/xclbin/vadd.hw.xo",
+   "-keep",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int",
+   "--temp_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:11 2020",
+ "timestampMillis": "1598520071091",
+ "status": {
+  "cmdId": "d62d0c9e-d6a7-46bb-9fd7-e799f1dc304b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:18 2020",
+ "timestampMillis": "1598520078502",
+ "status": {
+  "cmdId": "d62d0c9e-d6a7-46bb-9fd7-e799f1dc304b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:18 2020",
+ "timestampMillis": "1598520078503",
+ "buildStep": {
+  "cmdId": "f1c2e6ee-7c7c-4e8a-83e1-6a0fa96ec8c1",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/sdsl.dat -rtd /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/cf2sw.rtd -xclbin /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.xml -o /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/cf2sw.rtd",
+   "-xclbin",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:18 2020",
+ "timestampMillis": "1598520078503",
+ "status": {
+  "cmdId": "f1c2e6ee-7c7c-4e8a-83e1-6a0fa96ec8c1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:19 2020",
+ "timestampMillis": "1598520079356",
+ "status": {
+  "cmdId": "f1c2e6ee-7c7c-4e8a-83e1-6a0fa96ec8c1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:19 2020",
+ "timestampMillis": "1598520079357",
+ "buildStep": {
+  "cmdId": "fbc121a3-f19d-4bf9-8b10-bcf9c52d8ddd",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:19 2020",
+ "timestampMillis": "1598520079357",
+ "status": {
+  "cmdId": "fbc121a3-f19d-4bf9-8b10-bcf9c52d8ddd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 18:21:20 2020",
+ "timestampMillis": "1598520080259",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:20 2020",
+ "timestampMillis": "1598520080260",
+ "status": {
+  "cmdId": "fbc121a3-f19d-4bf9-8b10-bcf9c52d8ddd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:20 2020",
+ "timestampMillis": "1598520080261",
+ "buildStep": {
+  "cmdId": "7040d3d8-b2e5-445d-b06f-bee593f6934c",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_xdma_201830_2 --remote_ip_cache /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/.ipcache -s --output_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int --log_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/logs/link --report_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link --config /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vplConfig.ini -k /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link --no-info --iprepo /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xo/ip_repo/mycompany_com_kernel_Vadd_A_B_1_0 --messageDb /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/run_link/vpl.pb /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_xdma_201830_2",
+   "--remote_ip_cache",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/.ipcache",
+   "-s",
+   "--output_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int",
+   "--log_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/logs/link",
+   "--report_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link",
+   "--config",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xo/ip_repo/mycompany_com_kernel_Vadd_A_B_1_0",
+   "--messageDb",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/run_link/vpl.pb",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files\nmisc=BinaryName=vadd.hw\n\n[connectivity]\nnk=Vadd_A_B:1:Vadd_A_B_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:20 2020",
+ "timestampMillis": "1598520080261",
+ "status": {
+  "cmdId": "7040d3d8-b2e5-445d-b06f-bee593f6934c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:21 2020",
+ "timestampMillis": "1598520081563",
+ "buildStep": {
+  "cmdId": "13032385-f391-4139-bcfa-e482a39bc84a",
+  "name": "vpl",
+  "logFile": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_xdma_201830_2 --remote_ip_cache /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/.ipcache -s --output_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int --log_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/logs/link --report_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link --config /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vplConfig.ini -k /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link --no-info --iprepo /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xo/ip_repo/mycompany_com_kernel_Vadd_A_B_1_0 --messageDb /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/run_link/vpl.pb /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:21 2020",
+ "timestampMillis": "1598520081563",
+ "status": {
+  "cmdId": "13032385-f391-4139-bcfa-e482a39bc84a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Thu Aug 27 18:21:32 2020",
+ "timestampMillis": "1598520092617",
+ "vivadoProject": {
+  "openDir": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 18:21:32 2020",
+ "timestampMillis": "1598520092618",
+ "buildStep": {
+  "cmdId": "f1527b1c-6b8a-4821-8210-bda5c065faa4",
+  "name": "vivado",
+  "logFile": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 18:21:32 2020",
+ "timestampMillis": "1598520092619",
+ "status": {
+  "cmdId": "f1527b1c-6b8a-4821-8210-bda5c065faa4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892589",
+ "status": {
+  "cmdId": "f1527b1c-6b8a-4821-8210-bda5c065faa4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892627",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/syn/pfm_dynamic_Vadd_A_B_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892628",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/syn/pfm_dynamic_memory_subsystem_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892628",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/syn/bd_d216_interconnect_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892628",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/syn/bd_d216_vip_S04_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892636",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/imp/xilinx_u250_xdma_201830_2_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892650",
+ "status": {
+  "cmdId": "13032385-f391-4139-bcfa-e482a39bc84a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892657",
+ "status": {
+  "cmdId": "7040d3d8-b2e5-445d-b06f-bee593f6934c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892658",
+ "buildStep": {
+  "cmdId": "5d3b219e-9785-4b10-b63f-d94ac6fcb06c",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892658",
+ "status": {
+  "cmdId": "5d3b219e-9785-4b10-b63f-d94ac6fcb06c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892660",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892660",
+ "buildStep": {
+  "cmdId": "17058d25-52be-409a-b596-62e7ba8a0158",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/address_map.xml -sdsl /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/sdsl.dat -xclbin /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.xml -rtd /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.rtd -o /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.xml",
+  "args": [
+   "-a",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.rtd",
+   "-o",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:52 2020",
+ "timestampMillis": "1598523892661",
+ "status": {
+  "cmdId": "17058d25-52be-409a-b596-62e7ba8a0158",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893524",
+ "status": {
+  "cmdId": "17058d25-52be-409a-b596-62e7ba8a0158",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893527",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893527",
+ "buildStep": {
+  "cmdId": "f952f307-2934-4e22-bad0-2aa73c4f2765",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.rtd",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893527",
+ "status": {
+  "cmdId": "f952f307-2934-4e22-bad0-2aa73c4f2765",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893528",
+ "status": {
+  "cmdId": "f952f307-2934-4e22-bad0-2aa73c4f2765",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893528",
+ "status": {
+  "cmdId": "5d3b219e-9785-4b10-b63f-d94ac6fcb06c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893529",
+ "buildStep": {
+  "cmdId": "de0ac9d5-8797-4ca3-b91f-dcc952a77dd7",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.rtd --append-section :JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw_xml.rtd --add-section BUILD_METADATA:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.xml --add-section SYSTEM_METADATA:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/systemDiagramModelSlrBaseAddress.json --output /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.rtd",
+   "--append-section",
+   ":JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/vadd.hw.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--output",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893529",
+ "status": {
+  "cmdId": "de0ac9d5-8797-4ca3-b91f-dcc952a77dd7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893646",
+ "status": {
+  "cmdId": "de0ac9d5-8797-4ca3-b91f-dcc952a77dd7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893647",
+ "buildStep": {
+  "cmdId": "c350a8fa-0c1d-4d7d-802f-77c3467c5cf4",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin.info --input /home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin.info",
+   "--input",
+   "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/./xclbin/vadd.hw.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:53 2020",
+ "timestampMillis": "1598523893648",
+ "status": {
+  "cmdId": "c350a8fa-0c1d-4d7d-802f-77c3467c5cf4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894018",
+ "status": {
+  "cmdId": "c350a8fa-0c1d-4d7d-802f-77c3467c5cf4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894020",
+ "buildStep": {
+  "cmdId": "7f892760-99ab-447e-820f-4023939f674d",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894020",
+ "status": {
+  "cmdId": "7f892760-99ab-447e-820f-4023939f674d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894020",
+ "status": {
+  "cmdId": "7f892760-99ab-447e-820f-4023939f674d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894022",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/system_estimate_vadd.hw.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894116",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/reports/link/v++_link_vadd.hw_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894117",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/v++_link_vadd.hw_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894118",
+ "report": {
+  "path": "/home/hunjong/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Aug 27 19:24:54 2020",
+ "timestampMillis": "1598523894118",
+ "status": {
+  "cmdId": "cfac1746-4227-4c2c-8fe4-6c7b3f11830a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
